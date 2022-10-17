@@ -1,0 +1,18 @@
+<% @title = "Acerca del Software" %>
+
+<%= render :partial => 'sidebar' %>
+<div id="left_column_flip" class="left_column_flip">
+  <% if params[:country_name] %>
+    <h1><%= _("Would you like to see a website like this in your country?") %></h1>
+  <% else %>
+    <h1>Acerca del software</h1>
+  <% end %>
+  <p>Este sitio web funciona gracias a la adaptación efectuada por la Fundación Transparencia Activa del software Alaveteli. Alaveteli es un software libre para formular solicitudes de acceso a la información pública.</p>
+  <p>Alaveteli fue desarrollado inicialmente por mySociety y ha sido mejorado para un uso internacional por varias organizaciones, incluyendo a Access Info Europe, FLOSS Kosova y Zasto Ne en Bosnia.</p>
+  <p>El desarrollo de Alaveteli fue patrocinado por diferentes fundaciones y organizaciones benéficas interesadas en la transparencia en el mundo entero.
+  </p>
+
+
+
+  <div id="hash_link_padding"></div>
+</div>

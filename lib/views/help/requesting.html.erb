@@ -1,0 +1,185 @@
+<% @title = "Solicitudes de información" %>
+
+<%= render :partial => 'sidebar' %>
+<div id="left_column_flip" class="left_column_flip">
+  <h1 id="making_requests"><%= @title %> <a href="#making_requests">#</a></h1>
+  <dl>
+
+    <dt id="which_authority">No sé a quién debería presentar mi solicitud, ¿cómo puedo averiguarlo?<a href="#which_authority">#</a> </dt>
+
+    <dd>
+      <p>Puede ser difícil desenredar la complicada estructura del Estado y determinar quién posee la información que querés obtener. Aquí hay algunos consejos:
+      </p>
+      <ul>
+        <li>Navegá por <%= site_name %> buscando solicitudes similares a las tuyas.</li>
+        <li>Cuando hayas encontrado una autoridad que creés que podría tener la información, entrá a ver la información tenemos sobre ella y usá el enlace a su web oficial para verificar lo que hacen.</li>
+        <li>Fijate en Derecho al Dato el <a href="https://derechoaldato.com.ar/es_AR/body/list/all">listado de entidades</a>. Allí verás una descripción e información adicional sobre el ámbito de su competencia que te pueden ayudar.</li>
+        <li>Ponete en contacto con la autoridad por teléfono o correo electrónico para preguntar si tienen el tipo de información que buscás. 
+        </li>
+        <li>No te preocupes excesivamente por obtener la autoridad correcta. Si te equivocás, deberían derivar tu solicitud a la autoridad correcta. Y si te equivocaste de jurisdicción deberían informártelo.
+        </li>
+        <li>Si tenés un caso difícil, <a href="<%= help_contact_path %>">contactamos</a> para obtener ayuda.</li>
+      </ul>
+
+    </dd>
+
+
+
+    <dt id="missing_body">¡No está disponible en este sitio el organismo al que quiero pedir información!<a href="#missing_body">#</a> </dt>
+
+    <dd>
+      <p>Ponete en contacto con nosotros. Indicanos  el nombre de la autoridad pública -o entidad privada- y, si la tenés o lográs entrarla, su dirección de correo electrónico institucional para gestionar solicitudes de información.
+      </p>
+
+    </dd>
+
+    <dt id="authorities">¿Por qué el sitio incluye autoridades que no están formalmente obligadas por leyes de acceso a la información?<a href="#authorities">#</a> </dt>
+
+    <dd>
+      <p>Por el momento, Derecho al Dato permite realizar solicitudes de información a una variedad de entidades:</p>
+
+      <ul>
+        <li>Aquellas formalmente sujetas a la Ley N° 27.275 de acceso a la información pública.
+        </li>
+        <li>Las que cumplen voluntariamente con pedidos de acceso a la información.</li>
+        <li>Aquellas que no están -o no es claro que estén- sujetas a la leyes de acceso a la información pero creemos que deberían estarlo.</li>
+        <li>En el último caso, estamos usando el sitio para expandir los alcances del derecho de acceso a la información pública. La falta de normas expresas no puede limitar el ejercicio de ese derecho humano.</li>
+      </ul>
+      </dd>
+
+      <dt id="queseentiende">¿Qué se entiende por información pública?<a href="#queseentiende">#</a> </dt>
+      <dd><p>Es todo tipo de información de relevancia para la sociedad, es decir, que refiere a asuntos públicos y por esa razón nos interesa a todas/os. Puede tratarse de información actual o de cualquier época, relacionada con:</p>
+      <ul>
+      <li>La actuación del Estado o de sus funcionarios. Por ejemplo sueldos, trabajos cumplidos, sus actos, la gestión de un ministerio, los resultados obtenidos, etc.</li>
+      <li>La gestión de recursos, bienes o servicios públicos. Así, por ejemplo, la ejecución presupuestaria de un proyecto determinado, la inversión en servicios públicos, etc.
+      </li>
+      <li>El ejercicio de derechos. Podés pedir información sobre salud pública, educación, sobre el diseño y ejecución de políticas públicas, etc.</li>
+      <li>Cualquier otra información de interés para la comunidad. Lo que se te ocurra, lo que te sirva y esté relacionado con fines comunes de la sociedad. </li>
+      </ul>
+      <p>¡Navegá por el sitio y vas a encontrar buenos ejemplos!</p></dd>
+
+      
+
+      <dt id="cuanto">¿Puedo acceder a toda la información pública?<a href="#cuanto">#</a> </dt>
+
+      <dd><p>La regla general es que cualquier persona puede tener acceso a toda la información contenida en documentos -de cualquier tipo- que detenta el Estado u otro organismo o empresa obligada a informar. Sólo excepcionalmente se puede restringir ese derecho cuando se verifique alguno de los supuestos previstos por ley para proteger el interés común.</p> 
+      <p>Las excepciones están señaladas por la <a href='http://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/265949/norma.htm'>Ley Nº 27.275 en su artículo 8º</a>. Debés tener en cuenta que por lo general los organismos no interpretan de la mejor manera esas excepciones. Revisá la sección sobre Respuestas insatisfactorias.</p>
+      
+     
+    <dt id="focused"><p>¿Qué tipo de información puedo pedir?</p>
+    <p>¿En qué formato me lo van a dar?</p><a href="#focused">#</a> </dt>
+
+    <dd>
+
+      <p>
+      Podés pedir cualquier tipo de información, dato o documento que esté en poder de los sujetos obligados (o que deban producir). Por ejemplo, podés solicitar documentos de archivo, bases de datos, códigos fuente, registros, informes, expedientes, notas o lo que sea.</p>
+      <p>Si no te basta con la explicación que te dieron no dudes en pedir los documentos respaldatorios. Es posible que no quieran darte información en formatos reutilizables… sin embargo, es su deber brindar información en datos abiertos ¡Exigilo!
+      
+      </p></dd>
+
+      <dt id="negativo">No quiero explicar los motivos de mi solicitud.<a href="#negativo">#</a> </dt>
+      <dd>No tenés que hacerlo. No estás obligado a explicar nada a nadie. Las leyes protegen la libertad de acceder a información sin necesidad de dar razones ni de expresar para qué fines la vas a utilizar ¡No te pueden exigir explicaciones!</dd>
+
+  <dt id="porque">¿Por qué debo ser conciso al pedir información?<a href="#porque">#</a> </dt>  
+  <dd><p>En tu pedido no incluyas:</p> 
+  <ul>
+  <li>tus preocupaciones ni tus posturas sobre un tema.</li>
+  <li>insultos o difamaciones a terceros</li>
+  </ul>
+  <p>Si lo hacés, es posible que tengamos que eliminar tu solicitud. </p>
+  <p>Introducí en tu solicitud sólo lo que necesitás saber, de manera breve y concisa. Así vas a permitir que se identifique fácilmente la información que estás buscando y seguramente vas a obtener una respuesta más rápido.</p>
+  <p>Si tenés varias preguntas para hacer es conveniente que hagas varios pedidos de información. Aunque el tema sea el mismo, ello permitirá obtener respuestas parciales más rápidamente.</p>
+
+
+    <dt id="fees">¿Debo pagar para hacer una solicitud?<a href="#fees">#</a> </dt>
+
+    <dd>
+
+      <p>No, las solicitudes de información pública son siempre gratuitas.</p>
+
+      <p>Excepcionalmente, podrían pedirte anticipadamente el costo de la reproducción en papel. Sin embargo, sólo pueden hacerlo cuando no sea posible cumplir la entrega de copias en formato digital, sea porque no se encuentra en ese formato o porque su digitalización implica una carga desmedida para la administración.
+      </p>
+    </dd>
+
+
+
+    <dt id="quickly_response">¿Qué tan rápido recibiré una respuesta?<a href="#quickly_response">#</a> </dt>
+
+    <dd>
+      <p>Por ley, las autoridades públicas deben responder las solicitudes con máxima premura.</p>
+
+      <p>Incluso si no son rápidos, en todos los casos deben responder dentro de los 15 días hábiles. Si tuviste que aclarar tu solicitud, o si el organismo te notifica de una prórroga, la respuesta podría demorar otros 15 días hábiles más.
+      </p>
+      <p>Derecho al Dato te enviará un correo electrónico si no recibís una respuesta oportuna y te ayudará a exigirla.</p>
+
+    </dd>
+
+    <dt id="no_response">¿Qué pasa si nunca recibo respuesta?<a href="#no_response">#</a> </dt>
+
+    <dd>
+      <p>Hay algunas razones que explican por qué no recibiste respuesta.</p>
+      <ul>
+        <li>Podría tratarse de un problema real. Quizás la autoridad nunca recibió la solicitud. Vale la pena comunicarse por teléfono y constatar que hayan recibido la solicitud que se les envió por correo electrónico.
+        </li>
+        <li>Si no lo han recibido, el problema probablemente se deba a los "filtros de spam". Puede invitarse a la autoridad a revisar 
+          '<a href="<%= help_officers_path(:anchor => 'spam_problems') %>">este portal de ayuda para responsables de acceso a la información. <%= site_name %>, "nunca la recibí por correo electrónico"</a>'
+        </li>
+        <li>Si aún no tenés suerte, podés reclamar al órgano garante de acceso a la información pública o recurrir a la vía judicial.
+        Revisá la sección '<a href="<%= help_general_path(:template => 'unhappy') %>">“Qué hacer ante incumplimientos de solicitudes de información”.</a>'.
+      </ul>
+    </dd>
+
+    <dt id="not_satifised">Si no me respondieron o no me gusta la respuesta, ¿qué puedo hacer?<a href="#not_satifised">#</a> </dt>
+    <dd>Si no recibiste la información que pediste, si sólo te entregaron información de manera parcial o si la respuesta no te satisface, podés reclamar. Mirá nuestra sección'<a href="<%= help_general_path(:template => 'unhappy') %>">“respuestas insatisfactorias”.</a>'.
+    </dd>
+
+    <dt id="reuse">Quiero saber más sobre los pedidos de acceso a la información pública<a href="#reuse">#</a> </dt>
+    <dd>
+      <p>Los diferentes mecanismos de acceso a la información pública varían, aunque no en lo esencial, según la jurisdicción y tipo de organismo de que se trate. Por ejemplo, si vas a pedir información a un Ministerio del Poder Ejecutivo Nacional, podés revisar la <a href="http://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/265949/texact.htm">Ley Nº 27.275 de acceso a la información pública.</a></p>
+      <p>También te invitamos a que visites los sitios web de los órganos garantes de cada jurisdicción. Por ejemplo, el <a href="https://www.argentina.gob.ar/aaip">sitio de la Agencia de Acceso a la Información Pública</a> que es el órgano garante a nivel nacional.</p>
+
+    </dd>
+
+    <dt id="data_protection">¿Puedo pedir información personal?<a href="#data_protection">#</a> </dt>
+
+    <dd>
+      <p>No. Las solicitudes hechas a través de Derecho al Dato son públicas, son hechas bajo las leyes de acceso a la información y no pueden ayudarte a encontrar información privada (salvo que sea de interés público).</p>
+
+      <p>Si querés conocer qué datos personales tuyos tiene una entidad pública o privada, debés utilizar la <a href="http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/texact.htm">Ley de Protección de Datos Personales</a>. Te recomendamos también acudir al  <a href="https://www.argentina.gob.ar/aaip/datospersonales">órgano garante de protección</a> correspondiente.</p>
+
+      <p>Si ves que alguien incluyó datos personales, tal vez involuntariamente, en una solicitud, <a href="<%= help_contact_path %>">contactanos</a> de inmediato para que podamos eliminarla.</p>
+    </dd>
+
+
+    <dt id="private_requests">¡Me gustaría mantener la información en secreto! (quiero utilizarla primero)<a href="#private_requests">#</a> </dt>
+
+    <dd><p>Derecho al Dato actualmente solo está diseñado para solicitudes públicas. Todas las respuestas que recibimos se publican automáticamente en el sitio web para que cualquiera las lea, las reutilice y difunda la información.</p>
+    </dd>
+
+    <dt id="multiple">¿Puedo hacer un mismo pedido a varias autoridades? <a href="#multiple">#</a> </dt>
+
+    <dd>Te aconsejamos que primero envíes una versión de prueba de tu solicitud a algunas autoridades. Sus respuestas te ayudarán a mejorar la redacción de la solicitud, de modo que obtendrás información más completa y precisa cuando formules el pedido a todas las autoridades. Actualmente no existe un sistema automatizado para enviar la solicitud a varias autoridades a la vez, deberás hacerlo manualmente.
+    </dd>
+
+    <dt id="offsite">Hice una solicitud fuera de <%= site_name %>, ¿cómo la subo al portal?<a href="#offsite">#</a> </dt>
+
+    <dd>Derecho al Dato contiene un repositorio de solicitudes realizadas a través del sitio y no intenta ser un archivo de todas las solicitudes de acceso a la información. No admitimos cargar otras solicitudes al repositorio pues no podríamos verificar que las respuestas realmente fueron dadas por las autoridades. De todos modos, es posible volver a formular la misma solicitud de información a través de Derecho al Dato para que quede registrada en el repositorio.
+    </dd>
+
+    <% if AlaveteliConfiguration::enable_annotations %>
+      <dt id="moderation">¿Cómo controlan los pedidos que se hacen a través de <%= site_name %>? <a href="#moderation">#</a> </dt>
+
+      <dd>
+        <p>Los usuarios pueden formular los pedidos que crean convenientes, de la manera que quieran hacerlo, pues no juzgamos la conveniencia de las solicitudes ni la forma en que son formuladas.
+        </p>
+        <p>Aunque damos consejos útiles para efectuar solicitudes y ayudar a las personas a obtener la información que desean. Nos reservamos el derecho de eliminar cualquier solicitud que no tenga ese propósito, que contenga insultos o que revele inadecuadamente datos personales.
+        </p>
+      </dd>
+    <% end %>
+
+  </dl>
+
+  <p><strong>Podés seguir leyendo</strong>, sobre <a href="<%= help_privacy_path %>">tu privacidad</a> --&gt;
+
+    <div id="hash_link_padding"></div>
+</div>

@@ -1,0 +1,104 @@
+<% @title = "Tu privacidad" %>
+
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip" class="left_column_flip">
+  <h1 id="privacy"><%= @title %> <a href="#privacy">#</a></h1>
+  <dl>
+
+    <dt id="email_address">¿Quién puede ver mi correo electrónico? <a href="#email_address">#</a> </dt>
+
+    <dd><p>No revelaremos tu dirección de correo electrónico a nadie, ni siquiera a la autoridad o entidad a la que pidas información. Ellos sólo podrán ver una dirección de correo electrónico
+        @<%= AlaveteliConfiguration::incoming_email_domain %> que será creada sólo para esa solicitud. </p>
+      <p>si enviás un mensaje a otro usuario en el sitio, le revelarás tu dirección de correo electrónico. Te lo recordaremos cuando lo intentes hacer.</p>
+    </dd>
+
+    <dt id="nasty_spam">¿Me molestarán con correos spam a mi correo electrónico?<a href="#nasty_spam">#</a> </dt>
+    <dd>¡Jamás! Nos desagradan tanto como a vos los correos spam. Después de suscribirse a Derecho al Dato, solo te enviaremos correos relacionados con una solicitud que hayas realizado. Nunca le daremos o venderemos tu dirección a nadie.
+    </dd>
+
+    <dt id="public_request">¿Por qué mi nombre y mi solicitud aparecerán públicamente en el sitio?<a href="#public_request">#</a> </dt>
+
+    <dd>
+      <p>Publicamos tu solicitud en Internet para que cualquiera pueda leerla, reutilizarla y difundir la información que has encontrado. En principio no eliminamos ninguna solicitud (<a href="#delete_requests">mas detalles</a>).
+      </p>
+      <p>Tu nombre está enlazado a tu solicitud por lo que también debe publicarse. Es justo, ya que vamos a publicar también el nombre del funcionario o persona que responda la solicitud.</p>
+      <p>Si usás tu nombre real, eso permitirá a los sujetos requeridos ponerse en contacto con vos para ayudarte con tu investigación, proyecto o inquietud.
+      </p>
+      <p>El nombre es un requisito legal para hacer una solicitud. Nadie puede exigirte otro dato (DNI, edad, pasaporte o domicilio) ni pedirte que acredites tu identidad.</p>
+      <p>De todos modos, son ya contundentes las recomendaciones de organismos internacionales al sostener que debe permitirse la realización de pedidos de información de manera anónima. Apoyamos esa idea. Podés leer la siguiente pregunta para conocer las alternativas si no deseás publicar tu nombre completo.
+      </p>
+    </dd>
+
+    <dt id="real_name">¿Puedo hacer una solicitud de información usando un seudónimo?<a href="#real_name">#</a> </dt>
+
+
+    <dd>
+      <p>Técnicamente deberías usar tu nombre real.
+      </p>
+
+      <p>Sin embargo, como explicamos antes, es necesario que se reconozca el derecho de realizar pedidos de información sin revelar la identidad a fin de evitar el temor a represalias y promover al máximo la transparencia del sector público. Así lo han recomendado diversos organismos internacionales.</p>
+
+      <p>Por ello, alentamos el uso de apodos, alias o seudónimos.
+      </p>
+
+      <p>Debemos advertirte que si usas un seudónimo luego te será difícil reclamar por vía judicial en caso de que no obtengas la información deseada.</p>
+      <p>Hay otras buenas alternativas para no revelar tu identidad: 
+      </p>
+
+      <ul>
+        <li>Usar tu nombre de manera simple o diferente. Por ejemplo, “Juan Carlos Rodríguez de las Casas” puede hacer una solicitud válida como “Juan Rodríguez”, “Juan Carlos de las Casas” o cualquier otra combinación. Pero no como “J. C. Rodriguez” o “J. C. R. C.”
+        </li>
+        <li>Podés usar cualquier nombre por el cual seas ampliamente conocido y / o sea usado regularmente.</li>
+        <li>Podés usar el nombre de una organización, el de una empresa o el nombre comercial que poseas.</li>
+        <li>Pedile a alguien más que haga la solicitud en tu nombre.
+        </li>
+        <li>Podés pedirnos que hagamos la solicitud en tu nombre. Ponete en <a href="<%= help_contact_path %>">contacto</a> con nosotros.</li>
+
+      </ul>
+
+      <p>Podés elegir un nombre de fantasía pero en ningún caso trates de hacerte pasar por otra persona sin su autorización.</p>
+
+    </dd>
+
+
+    <dt id="delete_requests">¿Pueden eliminar mis solicitudes o cambiar mi nombre? <a href="#delete_requests">#</a> </dt>
+
+    <dd>
+
+      <p><%= site_name %> es un archivo público permanente de solicitudes de acceso a la información pública. Aunque es posible que la respuesta a tu solicitud ya no te sea útil, puede ser de interés para otros. Por este motivo, no eliminaremos solicitudes.
+      </p>
+
+      <p>En circunstancias excepcionales, podemos eliminar o cambiar tu nombre en el sitio web ver la <a href="#takedown">siguiente pregunta</a>. Del mismo modo, también podemos eliminar cierta información de carácter personal.
+      </p>
+
+      <p>Si te preocupa esto antes de hacer tu solicitud, consultá la sección sobre <a href="#real_name">seudónimos</a>.</p>
+
+    </dd>
+
+    <dt id="takedown">¿Pueden quitar información personal de las solicitudes?<a href="#takedown">#</a> </dt>
+
+    <dd>
+
+      <p>Si ves que en una solicitud o respuesta surge información personal tuya o de otra persona que no debería publicarse, <a href="<%= help_contact_path %>">informanos</a>.
+      Deberás especificarnos qué datos crees que corresponde quitar y por qué.</p>
+
+      <p>Si se trata de información personal que no debería publicarse y se difundió accidentalmente, la eliminaremos.</p>
+
+      <p>Aclaramos que existe un fuerte interés público en conocer los nombres de los funcionarios o servidores de las autoridades públicas y de las entidades privadas que intervienen en asuntos públicos. Solo eliminaremos esos nombres en circunstancias muy excepcionales, como cuando la divulgación de un nombre o un puesto de trabajo pudiera arriesgar la seguridad de una persona. Si crees que alguna de esas circunstancias se verifican en una solicitud, detallanos las razones excepcionales que justifiquen quitar o testar el dato en cuestión.
+      </p>
+
+      <p><%= site_name %> no se responsabiliza por los daños que pudiera ocasionar la publicación de datos personales en el marco de una solicitud, dado que solo pone a disposición de la ciudadanía, sin restricciones, un mecanismo para requerir información pública. Si ese mecanismo es utilizado de manera incorrecta, contra la ley e incluso contra las recomendaciones del sitio, tomaremos cartas en el asunto una vez que <a href="<%= help_contact_path %>">nos informes</a>.</p>
+
+      <p>No podemos hacerlo antes porque ello implicaría una censura sobre la circulación de información. En todo caso, carecemos de recursos y facultades para evitar que las personas usen de manera ilícita la información. Además, si una autoridad contestó una solicitud lo debe hacer sin condicionamientos a su publicidad y difusión, pues se trata de información pública, por lo que cabe suponer que no contendrá información confidencial que deba resguardarse.
+      </p>
+
+    </dd>
+
+
+  </dl>
+
+  <p><strong>Podés seguir leyendo</strong> sobre <a href="<%= help_officers_path %>">Ayuda a los RAIPs</a> --&gt;
+
+    <div id="hash_link_padding"></div>
+</div>

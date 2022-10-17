@@ -1,0 +1,65 @@
+<% @title = "API" %>
+
+<%= render :partial => 'sidebar' %>
+
+<div id="left_column_flip" class="left_column_flip">
+  <h1><%=@title %></h1>
+  <dl>
+    <dt>Introducción</dt>
+    <dd>
+      <p>
+      El proyecto Derecho al Dato funciona de acuerdo con los principios de los datos abiertos, disponibles para los programadores que quieran utilizarlos en otros sitios web y software.
+      </p>
+
+      <p> <%= site_name %> todavía no tiene un API completa pero vamos gradualmente añadiendo una gran cantidad de cosas que semejan en el uso a una API, según requieran los programadores.
+      </p>
+    </dd>
+
+    <dt>Enlaces a nuevas solicitudes</dt>
+    <dd>
+      <p>Para ir directo al formulario de envío de una solicitud en un organismo específico, las URLs deben tener éste formato:
+        <%= link_to new_request_to_body_path(:url_name => "nobre_del_organismo") , new_request_to_body_path(:url_name => "nobre_del_organismo") %>.
+        Luego se le pueden añadir los parámetros en la URL en sí o desde un formulario:
+      </p>
+        <ul>
+          <li> <strong>title</strong> - título predefinido de la nueva solicitud.</li>
+          <li> <strong>default_letter</strong> - texto predefinido del cuerpo de la carta. La formula de encabezamiento (Estimado...) y la despedida (Un saludo...) se añadirán al comienzo y al final. </li>
+          <li> <strong>body</strong> - en alternativa a default_letter esto pone como predefinido el texto entero de la solicitud dejándote la posibilidad de personalizar el saludo y la despedida. </li>
+          <li> <strong>tags</strong> - lista de etiquetas separadas con espacios, para que puedas buscar y enlazar posteriormente a las solicitudes realizadas, p.ej. openlylocal spending_id:12345. Los dos puntos (:) indican que la etiqueta contiene un valor ('machine tag'), que puede incluir puntos. 
+        </ul>
+    </dd>
+
+    <dt>Feeds RSS (Atom)</dt>
+    <dd>
+      <p>En la mayoría de las páginas que incluyen solicitudes de acceso a la información hay feeds Atom que podés utilizar para obtener actualizaciones y enlaces en formato XML. Podés encontrar el URL del feed Atom con una de las siguientes opciones:
+      </p>
+        <ul>
+          <li>Busca el <%= image_tag "feed-16.png", :alt => "RSS icon" %> enlace al feed RSS.</li>
+          <li>Examina la declaración <code>&lt;link rel="alternate" type="application/atom+xml"&gt;</code> en la cabecera del código HTML. </li>
+          <li>Añade <code>/feed</code> al final de la URL.
+        </ul>
+
+        <p>En particular, incluso las búsquedas avanzadas soportan feeds en formato Atom. Podés hacer todo tipo de cosa con este formato, como consultas por autoridad, por tipo de archivo, por fecha o por estado.
+        </p>
+    </dd>
+
+    <dt>Datos estructurados en JSON</dt>
+    <dd>
+      <p>Bastantes páginas tienen una versión JSON que permite bajar informaciones sobre los objetos en una forma estructurada. Para encontrarlos:
+      </p>
+      <ul>
+        <li>Añadí <code>.json</code> al final de la URL. </li>
+        <li>Buscá la declaración <code>&lt;link rel="alternate" type="application/json"&gt;</code> en la cabecera del código HTML. </li>
+      </ul>
+
+      <p>Solicitudes, usuarios y autoridades, todos tienen una versión JSON con información básica sobre ellos. Cada formato Atom tiene un equivalente JSON con información sobre los objetos incluidos en el feed.
+      </p>
+    </dd>
+
+    
+  </dl>
+
+  <p>Por favor <a href="<%= help_contact_path %>">contactános</a> si necesitas funcionalidad en el API que todavía no esté.</p>
+
+  <div id="hash_link_padding"></div>
+</div>
